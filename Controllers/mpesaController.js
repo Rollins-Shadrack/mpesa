@@ -5,6 +5,7 @@ const consumerkey = process.env.CONSUMERKEY
 const consumerSecret = process.env.CONSUMERSECRET
 const datetime = require('node-datetime')
 const axios = require('axios')
+
 const newPassword = () => {
     const dt = datetime.create()
     const formatted = dt.format('YmdHMS')
@@ -67,7 +68,7 @@ let unirest = require('unirest');
 //Lipa na Mpesa Online Payment
 let stkPush = (req, res) => {
     const token = req.token
-    console.log(token)
+    // console.log(token)
     const dt = datetime.create()
     const formatted = dt.format('YmdHMS')
 
